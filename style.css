@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    background: rgba(221, 221, 221, 0.685);
+}
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+canvas {
+    background: #000;
+    margin: 0 auto;
+    display: block;
+}
