@@ -90,13 +90,13 @@ function loop() {
     }
 
     // paint apples
-    for (var a = 0; a < apples.length; a++) {
+    for (let a = 0; a < apples.length; a++) {
         ctx.fillStyle = apples[a].color;
         ctx.fillRect(apples[a].x, apples[a].y, aw, ah);
     }
 
     // check for snake head collisions with apples
-    for (var a = 0; a < apples.length; a++) {
+    for (let a = 0; a < apples.length; a++) {
         if (
             px < (apples[a].x + pw)
             && px + pw > apples[a].x
@@ -115,7 +115,7 @@ function loop() {
 
 // apples spawner
 function spawnApple() {
-    var
+    let
         newApple = {
             x: ~~(Math.random() * canv.width),
             y: ~~(Math.random() * canv.height),
